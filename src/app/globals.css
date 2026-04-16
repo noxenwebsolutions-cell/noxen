@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@theme {
+  --color-nx-black: #000000;
+  --color-nx-ink: #050508;
+  --color-nx-panel: #07070c;
+  --color-nx-line: rgba(255, 255, 255, 0.08);
+  --color-nx-muted: #a1a1b3;
+  --color-nx-soft: #d6d6e6;
+  --color-nx-fog: #f4f4ff;
+  --color-nx-violet: #7c3aed;
+  --color-nx-iris: #6366f1;
+  --color-nx-neon: #c084fc;
+  --color-nx-fuchsia: #e879f9;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    @apply bg-nx-black text-nx-fog antialiased;
+    font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  }
+
+  ::selection {
+    background: color-mix(in oklab, var(--color-nx-neon) 32%, transparent);
+    color: var(--color-nx-fog);
+  }
+}
+
+@utility font-display {
+  font-family: var(--font-sora), ui-sans-serif, system-ui, sans-serif;
+}
+
+@utility text-balance {
+  text-wrap: balance;
+}
+
+.nx-grid {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: radial-gradient(ellipse 80% 55% at 50% 0%, black 18%, transparent 70%);
+}
+
+.nx-noise {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  opacity: 0.045;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.nx-sheen {
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.06) 35%,
+    rgba(255, 255, 255, 0) 70%
+  );
+}
+
+@keyframes nx-rise {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.nx-animate-rise {
+  animation: nx-rise 6.5s ease-in-out infinite;
+}
