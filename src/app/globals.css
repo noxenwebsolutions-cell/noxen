@@ -91,3 +91,9 @@
 .nx-animate-rise {
   animation: nx-rise 6.5s ease-in-out infinite;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .nx-animate-rise {
+    animation: none;
+  }
+}

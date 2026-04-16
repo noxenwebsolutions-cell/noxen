@@ -37,10 +37,10 @@ function HeroMonolith() {
               <div className="relative mt-7 grid gap-3 sm:grid-cols-2">
                 <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3">
                   <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-nx-neon/90">
-                    Enfoque
+                    Objetivo
                   </p>
                   <p className="mt-1 font-display text-sm font-extrabold text-white">
-                    Conversión real
+                    Más contactos
                   </p>
                 </div>
                 <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3">
@@ -55,20 +55,20 @@ function HeroMonolith() {
 
               <div className="relative mt-5 flex flex-wrap justify-center gap-2">
                 <span className="rounded-full border border-white/10 bg-nx-panel/60 px-3 py-1 text-xs text-nx-soft">
-                  Mobile first
+                  WhatsApp visible
                 </span>
                 <span className="rounded-full border border-white/10 bg-nx-panel/60 px-3 py-1 text-xs text-nx-soft">
-                  Diseño afilado
+                  Móvil primero
                 </span>
                 <span className="rounded-full border border-white/10 bg-nx-panel/60 px-3 py-1 text-xs text-nx-soft">
-                  Carga limpia
+                  Carga rápida
                 </span>
               </div>
             </div>
           </div>
 
           <p className="mt-5 text-center text-xs leading-relaxed text-nx-muted">
-            Identidad visual alineada con tu marca: oscuro, violeta neón y acabado premium.
+            Estética oscura premium alineada con tu marca: clara, moderna y creíble.
           </p>
         </div>
       </div>
@@ -80,7 +80,7 @@ export function Hero() {
   return (
     <section
       id="inicio"
-      className="relative overflow-hidden pt-24 pb-16 sm:pt-28 sm:pb-20 lg:pb-24"
+      className="relative overflow-hidden pb-20 pt-24 sm:pb-24 sm:pt-28 lg:pb-28"
     >
       <div className="pointer-events-none absolute inset-0">
         <div className="nx-grid absolute inset-0 opacity-70" />
@@ -109,24 +109,44 @@ export function Hero() {
 
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-nx-muted sm:text-xl text-balance">
               Landing pages modernas para negocios locales, listas en{" "}
-              <span className="font-semibold text-nx-soft">3 días</span>. Menos postureo,
-              más claridad: diseño serio, mensaje directo y un móvil que vende por ti.
+              <span className="font-semibold text-nx-soft">3 días</span>. Diseñadas para que
+              te escriban, reserven o compren.
             </p>
 
-            <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
+            <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-stretch sm:gap-3">
               <CtaButton
                 href={whatsappHref()}
                 variant="primary"
-                className="w-full sm:w-auto"
+                className="w-full sm:w-auto sm:min-h-[48px]"
                 target="_blank"
                 rel="noreferrer"
               >
-                Pedir propuesta
+                Hablar por WhatsApp
               </CtaButton>
-              <CtaButton href="#proceso" variant="secondary" className="w-full sm:w-auto">
-                Ver cómo trabajamos
+              <CtaButton
+                href="#ejemplos"
+                variant="secondary"
+                className="w-full sm:w-auto sm:min-h-[48px]"
+              >
+                Ver ejemplos
               </CtaButton>
             </div>
+
+            <div className="mt-4 flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-4 sm:gap-y-2">
+              <CtaButton
+                href={whatsappHref()}
+                variant="ghost"
+                className="min-h-0 justify-start px-0 py-2 text-sm font-semibold text-nx-neon hover:bg-transparent hover:text-white sm:py-0"
+              >
+                Quiero mi web →
+              </CtaButton>
+            </div>
+
+            <p className="mt-5 max-w-xl rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm leading-relaxed text-nx-soft">
+              Estoy trabajando con{" "}
+              <span className="font-semibold text-white">pocos proyectos al mes</span> para
+              asegurar calidad y rapidez.
+            </p>
 
             <dl className="mt-11 grid max-w-xl grid-cols-3 gap-4 border-t border-white/10 pt-9">
               <div>
@@ -137,15 +157,15 @@ export function Hero() {
               </div>
               <div>
                 <dt className="text-[11px] font-semibold uppercase tracking-[0.2em] text-nx-muted">
-                  Objetivo
+                  Meta
                 </dt>
                 <dd className="mt-1 font-display text-lg font-extrabold text-white">
-                  Contactos
+                  Clientes
                 </dd>
               </div>
               <div>
                 <dt className="text-[11px] font-semibold uppercase tracking-[0.2em] text-nx-muted">
-                  Alcance
+                  Foco
                 </dt>
                 <dd className="mt-1 font-display text-lg font-extrabold text-white">Local</dd>
               </div>

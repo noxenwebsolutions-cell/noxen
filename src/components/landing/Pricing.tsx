@@ -3,7 +3,7 @@ import { CtaButton } from "./CtaButton";
 
 export function Pricing() {
   return (
-    <section id="oferta" className="relative py-20 sm:py-24">
+    <section id="oferta" className="relative scroll-mt-28 py-24 sm:py-28">
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute bottom-[-120px] left-1/2 h-[520px] w-[900px] -translate-x-1/2 rounded-full bg-[radial-gradient(closest-side,rgba(168,85,247,0.18),transparent_72%)] blur-2xl" />
       </div>
@@ -11,18 +11,21 @@ export function Pricing() {
       <div className="relative mx-auto max-w-6xl px-5 sm:px-6">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-[11px] font-semibold uppercase tracking-[0.26em] text-nx-fuchsia/90">
-            Oferta de entrada
+            Precio claro
           </p>
           <h2 className="mt-4 font-display text-3xl font-extrabold tracking-tight text-white sm:text-4xl text-balance">
-            Una landing con acabado premium, sin precio de agencia grande.
+            Landing page desde 250€
           </h2>
           <p className="mt-4 text-base leading-relaxed text-nx-muted sm:text-lg text-balance">
-            Para empezar fuerte: una página enfocada, bien diseñada y lista para captar
-            contactos. Si luego quieres escalar, se apoya en una base sólida.
+            Ideal para negocios que quieren empezar rápido con una web seria.{" "}
+            <span className="font-semibold text-nx-soft">
+              Precio cerrado antes de empezar
+            </span>
+            . Sin sorpresas.
           </p>
         </div>
 
-        <div className="mx-auto mt-12 max-w-xl">
+        <div className="mx-auto mt-14 max-w-xl">
           <div className="relative overflow-hidden rounded-[28px] border border-white/12 bg-nx-panel/55 p-[1px] shadow-[0_34px_120px_-55px_rgba(168,85,247,0.65)]">
             <div className="pointer-events-none absolute inset-0">
               <div className="absolute -left-24 top-[-120px] h-[320px] w-[320px] rounded-full bg-[radial-gradient(closest-side,rgba(232,121,249,0.14),transparent_70%)] blur-2xl" />
@@ -32,30 +35,37 @@ export function Pricing() {
             <div className="relative rounded-[27px] bg-gradient-to-b from-white/[0.06] to-white/[0.02] p-8 sm:p-10">
               <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
                 <div>
-                  <p className="text-sm font-semibold text-nx-soft">Landing page</p>
+                  <p className="text-sm font-semibold text-nx-soft">Inversión de entrada</p>
                   <div className="mt-2 flex items-end gap-3">
                     <p className="font-display text-5xl font-extrabold tracking-tight text-white sm:text-6xl">
                       250€
                     </p>
-                    <p className="pb-2 text-sm font-medium text-nx-muted">entrada clara</p>
+                    <p className="pb-2 text-sm font-medium text-nx-muted">landing enfocada</p>
                   </div>
-                  <p className="mt-3 max-w-md text-sm leading-relaxed text-nx-muted">
-                    Precio orientativo para una landing enfocada. Si el alcance cambia, lo
-                    cerramos con prioridades y cifras, sin sorpresas.
-                  </p>
+                  <ul className="mt-4 space-y-2 text-sm leading-relaxed text-nx-muted">
+                    <li className="flex gap-2">
+                      <span className="mt-2 size-1.5 shrink-0 rounded-full bg-nx-neon" />
+                      Incluye estructura, diseño y publicación con objetivo de conversión.
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="mt-2 size-1.5 shrink-0 rounded-full bg-nx-fuchsia" />
+                      Si el alcance cambia, lo ajustamos antes de arrancar: acuerdo por
+                      escrito.
+                    </li>
+                  </ul>
                 </div>
                 <div className="rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-nx-soft">
-                  Entrega rápida
+                  72h online
                 </div>
               </div>
 
               <ul className="mt-8 grid gap-3 sm:grid-cols-2">
                 {[
-                  "Diseño moderno alineado a tu marca",
-                  "Responsive impecable, mobile first",
-                  "Copy estructurado para conversión",
-                  "WhatsApp / formulario / redes",
-                  "Optimización básica de rendimiento",
+                  "Web clara: confianza desde el primer segundo",
+                  "CTA fuerte a WhatsApp / contacto",
+                  "Mobile first (donde está tu cliente)",
+                  "Carga rápida para no perder visitas",
+                  "Copy ordenado para vender la acción",
                   "1 ronda de ajustes incluida",
                 ].map((line) => (
                   <li
@@ -70,16 +80,30 @@ export function Pricing() {
                 ))}
               </ul>
 
-              <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-                <p className="text-sm text-nx-muted">¿Dudas de alcance? Pregunta sin compromiso.</p>
+              <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                <p className="text-sm text-nx-muted">
+                  ¿No sabes si te encaja? Escríbeme y lo vemos en 2 minutos.
+                </p>
                 <CtaButton
                   href={whatsappHref()}
                   variant="primary"
-                  className="w-full sm:w-auto"
+                  className="w-full sm:w-auto sm:min-h-[48px]"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Pedir propuesta
+                  Hablar por WhatsApp
+                </CtaButton>
+              </div>
+
+              <div className="mt-4">
+                <CtaButton
+                  href={whatsappHref()}
+                  variant="ghost"
+                  className="w-full min-h-0 justify-center py-3 text-sm font-semibold text-nx-neon hover:bg-white/[0.04] hover:text-white sm:w-auto"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Quiero mi web
                 </CtaButton>
               </div>
             </div>
