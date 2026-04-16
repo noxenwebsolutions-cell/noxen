@@ -5,7 +5,7 @@ import { LogoMark } from "./LogoMark";
 export function Header() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/[0.06] bg-nx-black/70 backdrop-blur-xl">
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/favicon.png" />
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-5 py-3.5 sm:gap-4 sm:px-6">
         <LogoMark size="md" />
         <div className="flex items-center gap-2 sm:gap-3">
