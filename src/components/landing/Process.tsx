@@ -18,7 +18,7 @@ const steps = [
 
 export function Process() {
   return (
-    <section id="proceso" className="relative scroll-mt-28 border-y border-white/[0.06] py-24 sm:py-28">
+    <section id="proceso" className="relative scroll-mt-28 border-y border-white/[0.06] py-28 sm:py-32">
       <div className="pointer-events-none absolute inset-0">
         <div className="nx-grid absolute inset-0 opacity-30" />
       </div>
@@ -28,7 +28,7 @@ export function Process() {
           <p className="text-[11px] font-semibold uppercase tracking-[0.26em] text-nx-neon/90">
             Proceso
           </p>
-          <h2 className="mt-4 font-display text-3xl font-extrabold tracking-tight text-white sm:text-4xl text-balance">
+          <h2 className="mt-5 font-display text-3xl font-bold text-white sm:text-4xl text-balance">
             Tres pasos, cero humo.
           </h2>
           <p className="mt-4 text-base leading-relaxed text-nx-muted sm:text-lg text-balance">
@@ -42,14 +42,14 @@ export function Process() {
           {steps.map((s) => (
             <li
               key={s.n}
-              className="group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.05] to-white/[0.02] p-7 shadow-[0_18px_60px_-46px_rgba(168,85,247,0.45)] transition duration-300 hover:-translate-y-0.5 hover:border-white/16 hover:shadow-[0_26px_80px_-44px_rgba(168,85,247,0.35)]"
+              className="nx-card-surface group relative overflow-hidden bg-gradient-to-b from-white/[0.04] to-transparent p-7"
             >
               <div className="pointer-events-none absolute -right-16 -top-16 size-56 rounded-full bg-[radial-gradient(closest-side,rgba(168,85,247,0.22),transparent_70%)]" />
               <div className="relative">
-                <p className="font-display text-xs font-extrabold tracking-[0.32em] text-nx-neon">
+                <p className="font-display text-xs font-semibold tracking-[0.32em] text-nx-neon">
                   {s.n}
                 </p>
-                <h3 className="mt-4 font-display text-xl font-extrabold tracking-tight text-white">
+                <h3 className="mt-4 font-display text-xl font-semibold text-white">
                   {s.title}
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-nx-muted">{s.body}</p>

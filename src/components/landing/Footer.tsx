@@ -5,7 +5,7 @@ import { SocialProfileLinks } from "./SocialProfileLinks";
 
 export function Footer() {
   return (
-    <footer className="border-t border-white/[0.06] bg-nx-black pb-28 pt-14">
+    <footer className="border-t border-white/[0.06] bg-nx-black pb-32 pt-16">
       <div className="mx-auto flex max-w-6xl flex-col gap-10 px-5 sm:px-6 lg:flex-row lg:items-start lg:justify-between">
         <div>
           <LogoMark size="md" />

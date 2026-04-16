@@ -115,7 +115,7 @@ export function Audience() {
   return (
     <section
       id="para-quien"
-      className="relative scroll-mt-28 overflow-hidden py-24 sm:py-28"
+      className="relative scroll-mt-28 overflow-hidden py-28 sm:py-32"
     >
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute left-1/2 top-24 h-[520px] w-[760px] -translate-x-1/2 rounded-full bg-[radial-gradient(closest-side,rgba(99,102,241,0.16),transparent_72%)] blur-2xl" />
@@ -127,7 +127,7 @@ export function Audience() {
             <p className="text-[11px] font-semibold uppercase tracking-[0.26em] text-nx-fuchsia/90">
               Para quién es
             </p>
-            <h2 className="mt-4 font-display text-3xl font-extrabold tracking-tight text-white sm:text-4xl text-balance">
+            <h2 className="mt-5 font-display text-3xl font-bold text-white sm:text-4xl text-balance">
               Si vives del barrio, tu web tiene que cerrar la venta en el móvil.
             </h2>
             <p className="mt-4 text-base leading-relaxed text-nx-muted sm:text-lg text-balance">
@@ -148,7 +148,7 @@ export function Audience() {
               <article
                 key={s.title}
                 className={[
-                  "group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] p-6 shadow-[0_16px_55px_-42px_rgba(0,0,0,0.85)] transition duration-300 hover:-translate-y-0.5 hover:border-white/16 hover:bg-white/[0.035] hover:shadow-[0_26px_80px_-44px_rgba(168,85,247,0.28)]",
+                  "nx-card-surface group relative overflow-hidden p-6 sm:p-7",
                   idx === 0 ? "md:col-span-7" : "",
                   idx === 1 ? "md:col-span-5" : "",
                   idx === 2 ? "md:col-span-5" : "",
@@ -161,14 +161,14 @@ export function Audience() {
                 </div>
                 <div className="relative flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
                   <div className="flex gap-4">
-                    <div className="grid size-12 shrink-0 place-items-center rounded-xl border border-white/10 bg-nx-panel/70 text-nx-neon shadow-[0_0_30px_-12px_rgba(168,85,247,0.65)]">
+                    <div className="grid size-12 shrink-0 place-items-center rounded-2xl border border-white/[0.1] bg-nx-card-hover/60 text-nx-neon shadow-[0_0_28px_-12px_rgba(168,85,247,0.5)]">
                       <Icon />
                     </div>
                     <div>
                       <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-nx-muted">
                         {s.tag}
                       </p>
-                      <h3 className="mt-2 font-display text-xl font-extrabold tracking-tight text-white sm:text-2xl">
+                      <h3 className="mt-2 font-display text-xl font-semibold text-white sm:text-2xl">
                         {s.title}
                       </h3>
                       <p className="mt-2 text-sm font-semibold text-nx-soft">{s.result}</p>
@@ -177,7 +177,7 @@ export function Audience() {
                       </p>
                     </div>
                   </div>
-                  <span className="shrink-0 self-start rounded-lg border border-white/10 bg-nx-black/60 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-nx-neon/95 ring-1 ring-white/5 sm:self-auto">
+                  <span className="shrink-0 self-start rounded-xl border border-white/[0.1] bg-nx-black/70 px-2.5 py-1 text-[10px] font-medium uppercase tracking-wider text-nx-neon/95 ring-1 ring-white/[0.04] sm:self-auto">
                     + clientes
                   </span>
                 </div>
