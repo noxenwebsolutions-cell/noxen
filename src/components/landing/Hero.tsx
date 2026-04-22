@@ -40,7 +40,7 @@ function HeroMonolith() {
                     Objetivo
                   </p>
                   <p className="mt-1.5 font-display text-sm font-semibold text-white">
-                    Más contactos
+                    Más clientes
                   </p>
                 </div>
                 <div className="rounded-2xl border border-white/[0.08] bg-nx-card px-4 py-3.5 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.45)]">
@@ -101,18 +101,17 @@ export function Hero() {
             </div>
 
             <h1 className="mt-7 font-display text-[2.05rem] font-bold leading-[1.05] text-white sm:mt-8 sm:text-5xl lg:text-6xl text-balance">
-              Tu landing debería convertir{" "}
+              Tu web puede estar{" "}
               <span className="text-nx-neon drop-shadow-[0_0_28px_rgba(168,85,247,0.35)]">
-                visitas
+                haciéndote perder clientes
               </span>{" "}
-              en clientes.
+              cada día.
             </h1>
 
             <p className="mt-5 max-w-md text-[0.98rem] font-normal leading-relaxed text-nx-muted sm:text-[1.05rem]">
-              Para{" "}
-              <span className="font-medium text-nx-soft">negocios locales</span> que quieren más
-              reservas, llamadas y mensajes. Mobile‑first, rápida y premium.{" "}
-              <span className="font-medium text-nx-soft">Online en 72h</span>.
+              Creamos landing pages simples, rápidas y pensadas para una sola cosa:{" "}
+              <span className="font-medium text-nx-soft">que te escriban</span>. Para negocios
+              locales que quieren más reservas, llamadas y mensajes.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-2">
@@ -139,7 +138,7 @@ export function Hero() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Pedir presupuesto por WhatsApp
+                  Quiero clientes
                 </CtaButton>
                 <p className="text-center text-[13px] font-medium text-nx-muted sm:text-left">
                   Respuesta rápida · Precio claro · Sin compromiso
