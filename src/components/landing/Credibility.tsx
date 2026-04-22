@@ -93,7 +93,7 @@ const items = [
 
 export function Credibility() {
   return (
-    <section className="relative border-t border-white/[0.06] bg-gradient-to-b from-nx-black to-nx-ink py-20 sm:py-32">
+    <section className="relative overflow-hidden border-t border-white/[0.06] bg-gradient-to-b from-nx-black to-nx-ink py-20 sm:py-32">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/18 to-transparent" />
 
       <div className="relative mx-auto max-w-6xl px-5 sm:px-6">

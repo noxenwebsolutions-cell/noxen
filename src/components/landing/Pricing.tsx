@@ -3,7 +3,7 @@ import { CtaButton } from "./CtaButton";
 
 export function Pricing() {
   return (
-    <section id="oferta" className="relative scroll-mt-28 py-20 sm:py-32">
+    <section id="oferta" className="relative scroll-mt-28 overflow-hidden py-20 sm:py-32">
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute bottom-[-120px] left-1/2 h-[520px] w-[900px] -translate-x-1/2 rounded-full bg-[radial-gradient(closest-side,rgba(168,85,247,0.18),transparent_72%)] blur-2xl" />
       </div>

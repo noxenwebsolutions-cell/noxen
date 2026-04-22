@@ -35,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className={`${spaceGrotesk.variable} ${inter.variable}`}>
-      <body className="min-h-dvh overflow-x-hidden">
+      <body className="min-h-dvh w-full max-w-full overflow-x-hidden [overflow-x:clip]">
         <div className="nx-noise" aria-hidden />
         {children}
       </body>
