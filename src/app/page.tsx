@@ -9,16 +9,17 @@ import { Header } from "@/components/landing/Header";
 import { Hero } from "@/components/landing/Hero";
 import { Pricing } from "@/components/landing/Pricing";
 import { Process } from "@/components/landing/Process";
+import { StickyMobileCta } from "@/components/landing/StickyMobileCta";
 
 export default function Home() {
   return (
     <>
       <Header />
-      <main>
+      <main className="pb-28 sm:pb-0">
         <Hero />
+        <RealProjects />
         <Credibility />
         <ExampleSites />
-        <RealProjects />
         <Audience />
         <Process />
         <Pricing />
@@ -26,6 +27,7 @@ export default function Home() {
       </main>
       <Footer />
       <FloatingWhatsApp />
+      <StickyMobileCta />
     </>
   );
 }

@@ -136,7 +136,7 @@ export function ExampleSites() {
   return (
     <section
       id="ejemplos"
-      className="relative scroll-mt-28 border-t border-white/[0.06] bg-gradient-to-b from-nx-black to-nx-ink py-28 sm:py-32"
+      className="relative scroll-mt-28 border-t border-white/[0.06] bg-gradient-to-b from-nx-black to-nx-ink py-20 sm:py-32"
     >
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute left-1/2 top-24 h-[480px] w-[760px] -translate-x-1/2 rounded-full bg-[radial-gradient(closest-side,rgba(168,85,247,0.14),transparent_72%)] blur-2xl" />
@@ -156,7 +156,7 @@ export function ExampleSites() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-5 lg:grid-cols-3">
+        <div className="mt-12 grid gap-4 sm:gap-5 lg:mt-14 lg:grid-cols-3">
           {examples.map((ex) => (
             <article
               key={ex.title}

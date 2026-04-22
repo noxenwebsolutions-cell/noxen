@@ -115,7 +115,7 @@ export function Audience() {
   return (
     <section
       id="para-quien"
-      className="relative scroll-mt-28 overflow-hidden py-28 sm:py-32"
+      className="relative scroll-mt-28 overflow-hidden py-20 sm:py-32"
     >
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute left-1/2 top-24 h-[520px] w-[760px] -translate-x-1/2 rounded-full bg-[radial-gradient(closest-side,rgba(99,102,241,0.16),transparent_72%)] blur-2xl" />
@@ -141,7 +141,7 @@ export function Audience() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-4 md:grid-cols-12">
+        <div className="mt-12 grid gap-4 md:mt-14 md:grid-cols-12">
           {segments.map((s, idx) => {
             const Icon = s.icon;
             return (

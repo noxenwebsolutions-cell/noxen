@@ -13,7 +13,7 @@ export function FinalCta() {
             <div className="nx-grid absolute inset-0 opacity-35" />
           </div>
 
-          <div className="relative grid gap-10 p-10 sm:p-12 lg:grid-cols-12 lg:items-center">
+          <div className="relative grid gap-10 p-8 sm:p-12 lg:grid-cols-12 lg:items-center">
             <div className="lg:col-span-7">
               <p className="text-[11px] font-semibold uppercase tracking-[0.26em] text-nx-fuchsia/90">
                 Siguiente paso
@@ -22,16 +22,26 @@ export function FinalCta() {
                 Si tu negocio no transmite confianza online, estás perdiendo clientes.
               </h2>
               <p className="mt-5 max-w-2xl text-base font-medium leading-relaxed text-nx-soft sm:text-lg text-balance">
-                Te hago una web moderna, clara y pensada para que te contacten.
+                Te hago una web moderna, clara y pensada para que te contacten por WhatsApp.
               </p>
+              <div className="mt-6 flex flex-wrap gap-2">
+                {["Pocos proyectos/mes", "Entrega en 72h", "Precio cerrado"].map((t) => (
+                  <span
+                    key={t}
+                    className="rounded-full border border-white/[0.1] bg-white/[0.04] px-3 py-1.5 text-[12px] font-medium text-nx-soft"
+                  >
+                    {t}
+                  </span>
+                ))}
+              </div>
             </div>
 
             <div className="lg:col-span-5">
               <div className="rounded-2xl border border-white/[0.1] bg-nx-card/80 p-6 shadow-[0_8px_32px_-16px_rgba(0,0,0,0.5)]">
                 <p className="text-sm font-semibold text-white">Dime tu negocio y tu meta</p>
                 <p className="mt-2 text-sm leading-relaxed text-nx-muted">
-                  Reservo pocos proyectos al mes para entregar rápido y con calidad. Si encaja,
-                  te digo el plan y el precio cerrado.
+                  Trabajo con pocos proyectos al mes para entregar rápido y bien. Si encaja, te
+                  digo el plan y el precio cerrado antes de empezar.
                 </p>
                 <div className="mt-6 flex flex-col gap-3">
                   <CtaButton

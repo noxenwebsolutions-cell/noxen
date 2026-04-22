@@ -71,29 +71,29 @@ function IconSpeed() {
 const items = [
   {
     title: "Confianza al instante",
-    body: "Web clara que transmite confianza desde el primer segundo: qué haces, para quién y por qué deberían elegirte.",
+    body: "Se entiende en 3 segundos: qué haces, para quién y por qué eres la opción segura.",
     icon: IconTrust,
   },
   {
     title: "Contacto directo",
-    body: "Pensada para que te escriban: WhatsApp visible, formulario simple y cero laberintos para pedir cita o info.",
+    body: "WhatsApp y CTAs donde el cliente decide: sin menús, sin laberintos, sin perder intención.",
     icon: IconMessage,
   },
   {
     title: "Móvil impecable",
-    body: "Perfecta en móvil: donde entra la mayoría de clientes locales. Botones grandes, textos legibles, CTA siempre a mano.",
+    body: "Botones grandes, lectura cómoda y jerarquía limpia. El móvil deja de ser un problema.",
     icon: IconMobile,
   },
   {
     title: "Velocidad real",
-    body: "Carga rápida para no perder usuarios. Menos peso, mejor sensación de calidad y más gente que llega al botón.",
+    body: "Carga rápida y sensación premium. Más gente llega al CTA sin abandonar antes.",
     icon: IconSpeed,
   },
 ] as const;
 
 export function Credibility() {
   return (
-    <section className="relative border-t border-white/[0.06] bg-gradient-to-b from-nx-black to-nx-ink py-28 sm:py-32">
+    <section className="relative border-t border-white/[0.06] bg-gradient-to-b from-nx-black to-nx-ink py-20 sm:py-32">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/18 to-transparent" />
 
       <div className="relative mx-auto max-w-6xl px-5 sm:px-6">
@@ -111,13 +111,13 @@ export function Credibility() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:mt-14 lg:grid-cols-4">
           {items.map((item) => {
             const Icon = item.icon;
             return (
               <article
                 key={item.title}
-                className="nx-card-surface group relative overflow-hidden p-6 pl-5"
+                className="nx-card-surface group relative overflow-hidden p-5 pl-4 sm:p-6 sm:pl-5"
               >
                 <div className="pointer-events-none absolute inset-y-0 left-0 w-px bg-gradient-to-b from-nx-fuchsia/70 via-nx-neon/60 to-nx-iris/40 opacity-80" />
                 <div className="pl-4">

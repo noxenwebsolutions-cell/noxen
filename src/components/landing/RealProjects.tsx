@@ -66,7 +66,7 @@ export function RealProjects() {
   return (
     <section
       id="proyectos"
-      className="relative scroll-mt-28 border-t border-white/[0.06] bg-gradient-to-b from-nx-ink to-nx-black py-28 sm:py-32"
+      className="relative scroll-mt-28 border-t border-white/[0.06] bg-gradient-to-b from-nx-ink to-nx-black py-20 sm:py-32"
     >
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute right-0 top-1/2 h-[420px] w-[520px] -translate-y-1/2 translate-x-1/4 rounded-full bg-[radial-gradient(closest-side,rgba(168,85,247,0.1),transparent_70%)] blur-2xl" />
@@ -75,14 +75,14 @@ export function RealProjects() {
       <div className="relative mx-auto max-w-6xl px-5 sm:px-6">
         <div className="max-w-3xl">
           <p className="text-[11px] font-semibold uppercase tracking-[0.26em] text-nx-neon/90">
-            Credibilidad
+            Caso real
           </p>
           <h2 className="mt-5 font-display text-3xl font-bold text-white sm:text-4xl text-balance">
-            Proyectos reales
+            Proyecto publicado
           </h2>
           <p className="mt-4 max-w-2xl text-base font-normal leading-relaxed text-nx-muted sm:text-lg text-balance">
-            Ejemplos de webs enfocadas a resultados reales: producto publicado, con decisión
-            de diseño y una experiencia que se nota al usarla.
+            Menos promesas, más evidencia: un caso real con experiencia cuidada y diseño con
+            intención.
           </p>
         </div>
 
@@ -103,6 +103,16 @@ export function RealProjects() {
                 <p className="mt-3 max-w-xl text-sm font-normal leading-relaxed text-nx-muted sm:text-base">
                   {p.description}
                 </p>
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {["UI premium", "Lectura rápida", "Decisiones de producto"].map((t) => (
+                    <span
+                      key={t}
+                      className="rounded-full border border-white/[0.1] bg-white/[0.04] px-3 py-1.5 text-[12px] font-medium text-nx-soft"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
                 <Link
                   href={p.href}
                   target="_blank"

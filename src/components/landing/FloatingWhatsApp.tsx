@@ -6,7 +6,7 @@ export function FloatingWhatsApp() {
       href={whatsappHref()}
       target="_blank"
       rel="noreferrer"
-      className="nx-wa-fab fixed bottom-[max(1.25rem,env(safe-area-inset-bottom,0px))] right-[max(1.25rem,env(safe-area-inset-right,0px))] z-[60] grid size-16 place-items-center rounded-2xl border border-white/[0.12] bg-[#0a0a0c]/95 text-white backdrop-blur-md transition duration-200 ease-out hover:-translate-y-1 hover:border-white/[0.18] hover:bg-[#111114] active:translate-y-0 active:scale-[0.96] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--color-nx-neon)]"
+      className="nx-wa-fab fixed bottom-[max(1.25rem,env(safe-area-inset-bottom,0px))] right-[max(1.25rem,env(safe-area-inset-right,0px))] z-[60] hidden size-16 place-items-center rounded-2xl border border-white/[0.12] bg-[#0a0a0c]/95 text-white backdrop-blur-md transition duration-200 ease-out hover:-translate-y-1 hover:border-white/[0.18] hover:bg-[#111114] active:translate-y-0 active:scale-[0.96] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--color-nx-neon)] sm:grid"
       aria-label="Hablar por WhatsApp"
     >
       <svg viewBox="0 0 24 24" className="size-[1.65rem]" fill="currentColor" aria-hidden>

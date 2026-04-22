@@ -18,7 +18,10 @@ const steps = [
 
 export function Process() {
   return (
-    <section id="proceso" className="relative scroll-mt-28 border-y border-white/[0.06] py-28 sm:py-32">
+    <section
+      id="proceso"
+      className="relative scroll-mt-28 border-y border-white/[0.06] py-20 sm:py-32"
+    >
       <div className="pointer-events-none absolute inset-0">
         <div className="nx-grid absolute inset-0 opacity-30" />
       </div>
@@ -37,7 +40,7 @@ export function Process() {
           </p>
         </div>
 
-        <ol className="relative mt-14 grid gap-4 lg:grid-cols-3">
+        <ol className="relative mt-12 grid gap-4 lg:mt-14 lg:grid-cols-3">
           <div className="pointer-events-none absolute left-0 right-0 top-8 hidden h-px bg-gradient-to-r from-transparent via-white/10 to-transparent lg:block" />
           {steps.map((s) => (
             <li

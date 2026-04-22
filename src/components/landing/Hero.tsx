@@ -19,7 +19,7 @@ function HeroMonolith() {
 
         <div className="relative mx-auto flex max-w-[420px] flex-col items-center">
           <div className="relative w-full overflow-hidden rounded-2xl border border-white/[0.1] bg-gradient-to-b from-white/[0.05] to-white/[0.02] p-px shadow-[0_24px_80px_-40px_rgba(168,85,247,0.35)] nx-animate-rise">
-            <div className="relative rounded-2xl bg-nx-black px-6 pb-7 pt-8 sm:px-8 sm:pb-8 sm:pt-9">
+            <div className="relative rounded-2xl bg-nx-black px-5 pb-6 pt-7 sm:px-8 sm:pb-8 sm:pt-9">
               <div className="nx-sheen pointer-events-none absolute inset-0 opacity-50" />
               <div className="pointer-events-none absolute inset-x-10 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
 
@@ -34,7 +34,7 @@ function HeroMonolith() {
                 />
               </div>
 
-              <div className="relative mt-8 grid gap-3 sm:grid-cols-2">
+              <div className="relative mt-7 grid gap-3 sm:grid-cols-2">
                 <div className="rounded-2xl border border-white/[0.08] bg-nx-card px-4 py-3.5 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.45)]">
                   <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-nx-neon/90">
                     Objetivo
@@ -45,7 +45,7 @@ function HeroMonolith() {
                 </div>
                 <div className="rounded-2xl border border-white/[0.08] bg-nx-card px-4 py-3.5 shadow-[0_4px_20px_-8px_rgba(0,0,0,0.45)]">
                   <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-nx-fuchsia/90">
-                    Ritmo
+                    Entrega
                   </p>
                   <p className="mt-1.5 font-display text-sm font-semibold text-white">
                     Online en 72h
@@ -53,7 +53,7 @@ function HeroMonolith() {
                 </div>
               </div>
 
-              <div className="relative mt-6 flex flex-wrap justify-center gap-2">
+              <div className="relative mt-5 flex flex-wrap justify-center gap-2">
                 <span className="rounded-xl border border-white/[0.08] bg-nx-card/80 px-3 py-1.5 text-xs font-medium text-nx-soft">
                   WhatsApp visible
                 </span>
@@ -67,8 +67,8 @@ function HeroMonolith() {
             </div>
           </div>
 
-          <p className="mt-6 max-w-sm text-center text-xs font-medium leading-relaxed text-nx-muted">
-            Estética oscura premium: clara, moderna y creíble.
+          <p className="mt-5 max-w-sm text-center text-xs font-medium leading-relaxed text-nx-muted">
+            Dark premium, móvil impecable y CTA sin fricción.
           </p>
         </div>
       </div>
@@ -80,7 +80,7 @@ export function Hero() {
   return (
     <section
       id="inicio"
-      className="relative overflow-hidden pb-24 pt-[5.5rem] sm:pb-28 sm:pt-28 lg:pb-32"
+      className="relative overflow-hidden pb-20 pt-[5.35rem] sm:pb-28 sm:pt-28 lg:pb-32"
     >
       <div className="pointer-events-none absolute inset-0">
         <div className="nx-grid absolute inset-0 opacity-60" />
@@ -100,20 +100,36 @@ export function Hero() {
               </p>
             </div>
 
-            <h1 className="mt-8 font-display text-[2.125rem] font-bold leading-[1.06] text-white sm:text-5xl lg:text-6xl text-balance">
-              Páginas web que generan{" "}
+            <h1 className="mt-7 font-display text-[2.05rem] font-bold leading-[1.05] text-white sm:mt-8 sm:text-5xl lg:text-6xl text-balance">
+              Si tu web no transmite{" "}
               <span className="text-nx-neon drop-shadow-[0_0_28px_rgba(168,85,247,0.35)]">
-                clientes
-              </span>
+                confianza
+              </span>{" "}
+              en móvil, pierdes clientes.
             </h1>
 
-            <p className="mt-6 max-w-md text-base font-normal leading-relaxed text-nx-muted sm:text-[1.05rem]">
-              Landing pages para negocios locales, listas en{" "}
-              <span className="font-medium text-nx-soft">3 días</span>. Pensadas para captar
-              contactos.
+            <p className="mt-5 max-w-md text-[0.98rem] font-normal leading-relaxed text-nx-muted sm:text-[1.05rem]">
+              Te diseño una landing{" "}
+              <span className="font-medium text-nx-soft">clara, rápida y dark premium</span> para
+              que te escriban por WhatsApp (y no se vayan).
             </p>
 
-            <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-start sm:gap-3">
+            <div className="mt-6 flex flex-wrap gap-2">
+              {[
+                { label: "Respuesta rápida", tone: "text-nx-soft" },
+                { label: "Precio claro", tone: "text-nx-soft" },
+                { label: "Entrega en 72h", tone: "text-nx-soft" },
+              ].map((item) => (
+                <span
+                  key={item.label}
+                  className={`rounded-full border border-white/[0.1] bg-white/[0.04] px-3 py-1.5 text-[12px] font-medium ${item.tone}`}
+                >
+                  {item.label}
+                </span>
+              ))}
+            </div>
+
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-start sm:gap-3">
               <div className="flex w-full flex-col gap-2 sm:w-auto">
                 <CtaButton
                   href={whatsappHref()}
@@ -125,15 +141,15 @@ export function Hero() {
                   Hablar por WhatsApp
                 </CtaButton>
                 <p className="text-center text-[13px] font-medium text-nx-muted sm:text-left">
-                  Respuesta rápida · Sin compromiso
+                  Te digo si encaja y el precio cerrado.
                 </p>
               </div>
               <CtaButton
-                href="#ejemplos"
+                href="#proyectos"
                 variant="secondary"
                 className="w-full min-h-[3.35rem] sm:w-auto sm:min-h-[3.25rem]"
               >
-                Ver ejemplos
+                Ver proyectos reales
               </CtaButton>
             </div>
 
@@ -147,13 +163,26 @@ export function Hero() {
               </CtaButton>
             </div>
 
-            <p className="mt-8 max-w-md rounded-2xl border border-white/[0.08] bg-nx-card/90 px-4 py-3.5 text-sm font-normal leading-relaxed text-nx-soft">
-              Estoy trabajando con{" "}
-              <span className="font-medium text-white">pocos proyectos al mes</span> para
-              asegurar calidad y rapidez.
-            </p>
+            <div className="mt-8 grid max-w-md gap-3 sm:grid-cols-2">
+              <div className="rounded-2xl border border-white/[0.08] bg-nx-card/90 px-4 py-3.5 text-sm leading-relaxed text-nx-soft">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-nx-muted">
+                  Enfoque
+                </p>
+                <p className="mt-1.5 font-medium text-white">Conversión en móvil</p>
+                <p className="mt-1 text-nx-muted">
+                  Jerarquía, copy y CTA para que el usuario actúe.
+                </p>
+              </div>
+              <div className="rounded-2xl border border-white/[0.08] bg-nx-card/90 px-4 py-3.5 text-sm leading-relaxed text-nx-soft">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-nx-muted">
+                  Capacidad
+                </p>
+                <p className="mt-1.5 font-medium text-white">Pocos proyectos/mes</p>
+                <p className="mt-1 text-nx-muted">Para entregar rápido y con nivel.</p>
+              </div>
+            </div>
 
-            <dl className="mt-12 grid max-w-md grid-cols-3 gap-4 border-t border-white/[0.08] pt-10">
+            <dl className="mt-10 grid max-w-md grid-cols-3 gap-4 border-t border-white/[0.08] pt-8">
               <div>
                 <dt className="text-[11px] font-medium uppercase tracking-[0.18em] text-nx-muted">
                   Entrega
@@ -165,7 +194,7 @@ export function Hero() {
                   Meta
                 </dt>
                 <dd className="mt-1.5 font-display text-lg font-semibold text-white">
-                  Clientes
+                  Mensajes
                 </dd>
               </div>
               <div>
