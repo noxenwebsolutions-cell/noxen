@@ -69,7 +69,7 @@ export function RealProjects() {
       className="relative scroll-mt-28 overflow-hidden border-t border-white/[0.06] bg-gradient-to-b from-nx-ink to-nx-black py-20 sm:py-32"
     >
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute right-0 top-1/2 h-[420px] w-[520px] -translate-y-1/2 translate-x-1/4 rounded-full bg-[radial-gradient(closest-side,rgba(168,85,247,0.1),transparent_70%)] blur-2xl" />
+        <div className="absolute left-1/2 top-1/2 h-[420px] w-[520px] -translate-x-[15%] -translate-y-1/2 rounded-full bg-[radial-gradient(closest-side,rgba(168,85,247,0.1),transparent_70%)] blur-2xl" />
       </div>
 
       <div className="relative mx-auto max-w-6xl px-5 sm:px-6">

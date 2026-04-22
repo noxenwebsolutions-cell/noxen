@@ -16,13 +16,13 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://noxen.studio"),
-  title: "Noxen — Web Solutions para negocios locales",
+  title: "Landings en 72h que convierten en clientes — Noxen",
   description:
-    "Landing pages premium, rápidas y orientadas a conversión. Diseño serio, entrega en 72h.",
+    "Landings premium para negocios locales: móvil impecable, carga rápida y CTA a WhatsApp. Entrega en 72h con precio claro.",
   openGraph: {
-    title: "Noxen — Web Solutions para negocios locales",
+    title: "Landings en 72h que convierten en clientes — Noxen",
     description:
-      "Landing pages premium, rápidas y orientadas a conversión. Diseño serio, entrega en 72h.",
+      "Landings premium para negocios locales: móvil impecable, carga rápida y CTA a WhatsApp. Entrega en 72h con precio claro.",
     type: "website",
     locale: "es_ES",
   },

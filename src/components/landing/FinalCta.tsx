@@ -4,7 +4,7 @@ import { SocialProfileLinks } from "./SocialProfileLinks";
 
 export function FinalCta() {
   return (
-    <section id="contacto" className="relative scroll-mt-28 pb-32 pt-6 sm:pb-36">
+    <section id="contacto" className="relative scroll-mt-28 overflow-hidden pb-32 pt-6 sm:pb-36">
       <div className="mx-auto max-w-6xl px-5 sm:px-6">
         <div className="relative overflow-hidden rounded-2xl border border-white/[0.1] bg-gradient-to-br from-nx-panel/90 via-nx-ink/85 to-nx-black shadow-[0_32px_100px_-48px_rgba(168,85,247,0.45)]">
           <div className="pointer-events-none absolute inset-0">

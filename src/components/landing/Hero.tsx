@@ -82,10 +82,10 @@ export function Hero() {
       id="inicio"
       className="relative overflow-hidden pb-20 pt-[5.35rem] sm:pb-28 sm:pt-28 lg:pb-32"
     >
-      <div className="pointer-events-none absolute inset-0">
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="nx-grid absolute inset-0 opacity-60" />
         <div className="absolute -top-44 left-1/2 h-[560px] w-[980px] -translate-x-1/2 rounded-full bg-[radial-gradient(closest-side,rgba(124,58,237,0.22),transparent_72%)] blur-2xl" />
-        <div className="absolute top-40 right-[-160px] h-[460px] w-[460px] rounded-full bg-[radial-gradient(closest-side,rgba(232,121,249,0.1),transparent_72%)] blur-2xl" />
+        <div className="absolute left-1/2 top-52 h-[460px] w-[460px] -translate-x-[8%] rounded-full bg-[radial-gradient(closest-side,rgba(232,121,249,0.1),transparent_72%)] blur-2xl" />
       </div>
 
       <div className="pointer-events-none absolute inset-y-0 left-0 w-px bg-gradient-to-b from-transparent via-white/15 to-transparent opacity-40 sm:left-6 lg:left-[max(0px,calc(50%-36rem)))]" />
@@ -101,17 +101,18 @@ export function Hero() {
             </div>
 
             <h1 className="mt-7 font-display text-[2.05rem] font-bold leading-[1.05] text-white sm:mt-8 sm:text-5xl lg:text-6xl text-balance">
-              Si tu web no transmite{" "}
+              Tu landing debería convertir{" "}
               <span className="text-nx-neon drop-shadow-[0_0_28px_rgba(168,85,247,0.35)]">
-                confianza
+                visitas
               </span>{" "}
-              en móvil, pierdes clientes.
+              en clientes.
             </h1>
 
             <p className="mt-5 max-w-md text-[0.98rem] font-normal leading-relaxed text-nx-muted sm:text-[1.05rem]">
-              Te diseño una landing{" "}
-              <span className="font-medium text-nx-soft">clara, rápida y dark premium</span> para
-              que te escriban por WhatsApp (y no se vayan).
+              Para{" "}
+              <span className="font-medium text-nx-soft">negocios locales</span> que quieren más
+              reservas, llamadas y mensajes. Mobile‑first, rápida y premium.{" "}
+              <span className="font-medium text-nx-soft">Online en 72h</span>.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-2">
@@ -138,18 +139,18 @@ export function Hero() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Hablar por WhatsApp
+                  Pedir presupuesto por WhatsApp
                 </CtaButton>
                 <p className="text-center text-[13px] font-medium text-nx-muted sm:text-left">
-                  Te digo si encaja y el precio cerrado.
+                  Respuesta rápida · Precio claro · Sin compromiso
                 </p>
               </div>
               <CtaButton
-                href="#proyectos"
+                href="#caso-real"
                 variant="secondary"
                 className="w-full min-h-[3.35rem] sm:w-auto sm:min-h-[3.25rem]"
               >
-                Ver proyectos reales
+                Ver caso real
               </CtaButton>
             </div>
 
